@@ -1,6 +1,6 @@
 {
   "name": "@datatypes/matrix",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Class for 4x4 row-major matrices for transformations in 3D",
   "main": "build/index.js",
   "directories": {
