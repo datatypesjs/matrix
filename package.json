@@ -1,0 +1,36 @@
+{
+  "name": "@datatypes/matrix",
+  "version": "0.0.0",
+  "description": "Class for 4x4 row-major matrices for transformations in 3D",
+  "main": "build/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run build && ava --verbose test/main.js",
+    "build": "coffee -o build source && coffee --compile test",
+    "prepublish": "npm test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datatypesjs/matrix.git"
+  },
+  "keywords": [
+    "matrix",
+    "transformation",
+    "3D"
+  ],
+  "author": "Adrian Sieber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datatypesjs/matrix/issues"
+  },
+  "homepage": "https://github.com/datatypesjs/matrix#readme",
+  "dependencies": {
+    "ava": "^0.11.0"
+  },
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "coffee-script": "^1.10.0"
+  }
+}
